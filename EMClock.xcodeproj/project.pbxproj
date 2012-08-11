@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1D42EDB15D6D91100ADAA6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EDA15D6D91100ADAA6A /* UIKit.framework */; };
+		A1D42EDD15D6D91100ADAA6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EDC15D6D91100ADAA6A /* Foundation.framework */; };
+		A1D42EDF15D6D91100ADAA6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EDE15D6D91100ADAA6A /* CoreGraphics.framework */; };
+		A1D42EE515D6D91100ADAA6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1D42EE315D6D91100ADAA6A /* InfoPlist.strings */; };
+		A1D42EE715D6D91100ADAA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D42EE615D6D91100ADAA6A /* main.m */; };
+		A1D42EEB15D6D91100ADAA6A /* EMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D42EEA15D6D91100ADAA6A /* EMAppDelegate.m */; };
+		A1D42EEE15D6D91100ADAA6A /* EMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D42EED15D6D91100ADAA6A /* EMViewController.m */; };
+		A1D42EF115D6D91100ADAA6A /* EMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D42EEF15D6D91100ADAA6A /* EMViewController.xib */; };
+		A1D42EF915D6D91100ADAA6A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EF815D6D91100ADAA6A /* SenTestingKit.framework */; };
+		A1D42EFA15D6D91100ADAA6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EDA15D6D91100ADAA6A /* UIKit.framework */; };
+		A1D42EFB15D6D91100ADAA6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D42EDC15D6D91100ADAA6A /* Foundation.framework */; };
+		A1D42F0315D6D91100ADAA6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1D42F0115D6D91100ADAA6A /* InfoPlist.strings */; };
+		A1D42F0615D6D91100ADAA6A /* EMClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D42F0515D6D91100ADAA6A /* EMClockTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1D42EFC15D6D91100ADAA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D42ECD15D6D91000ADAA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D42ED515D6D91100ADAA6A;
+			remoteInfo = EMClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1D42ED615D6D91100ADAA6A /* EMClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D42EDA15D6D91100ADAA6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1D42EDC15D6D91100ADAA6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1D42EDE15D6D91100ADAA6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1D42EE215D6D91100ADAA6A /* EMClock-Info.plist */ = {isa = PBXFileReference; path = "EMClock-Info.plist"; sourceTree = "<group>"; };
+		A1D42EE415D6D91100ADAA6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1D42EE615D6D91100ADAA6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1D42EE815D6D91100ADAA6A /* EMClock-Prefix.pch */ = {isa = PBXFileReference; path = "EMClock-Prefix.pch"; sourceTree = "<group>"; };
+		A1D42EE915D6D91100ADAA6A /* EMAppDelegate.h */ = {isa = PBXFileReference; path = EMAppDelegate.h; sourceTree = "<group>"; };
+		A1D42EEA15D6D91100ADAA6A /* EMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMAppDelegate.m; sourceTree = "<group>"; };
+		A1D42EEC15D6D91100ADAA6A /* EMViewController.h */ = {isa = PBXFileReference; path = EMViewController.h; sourceTree = "<group>"; };
+		A1D42EED15D6D91100ADAA6A /* EMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMViewController.m; sourceTree = "<group>"; };
+		A1D42EF015D6D91100ADAA6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EMViewController.xib; sourceTree = "<group>"; };
+		A1D42EF715D6D91100ADAA6A /* EMClockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMClockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D42EF815D6D91100ADAA6A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1D42F0015D6D91100ADAA6A /* EMClockTests-Info.plist */ = {isa = PBXFileReference; path = "EMClockTests-Info.plist"; sourceTree = "<group>"; };
+		A1D42F0215D6D91100ADAA6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1D42F0415D6D91100ADAA6A /* EMClockTests.h */ = {isa = PBXFileReference; path = EMClockTests.h; sourceTree = "<group>"; };
+		A1D42F0515D6D91100ADAA6A /* EMClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMClockTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1D42ED315D6D91100ADAA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42EDB15D6D91100ADAA6A /* UIKit.framework in Frameworks */,
+				A1D42EDD15D6D91100ADAA6A /* Foundation.framework in Frameworks */,
+				A1D42EDF15D6D91100ADAA6A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D42EF315D6D91100ADAA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42EF915D6D91100ADAA6A /* SenTestingKit.framework in Frameworks */,
+				A1D42EFA15D6D91100ADAA6A /* UIKit.framework in Frameworks */,
+				A1D42EFB15D6D91100ADAA6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1D42ECB15D6D91000ADAA6A = {
+			isa = PBXGroup;
+			children = (
+				A1D42EE015D6D91100ADAA6A /* EMClock */,
+				A1D42EFE15D6D91100ADAA6A /* EMClockTests */,
+				A1D42ED915D6D91100ADAA6A /* Frameworks */,
+				A1D42ED715D6D91100ADAA6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1D42ED715D6D91100ADAA6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42ED615D6D91100ADAA6A /* EMClock.app */,
+				A1D42EF715D6D91100ADAA6A /* EMClockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1D42ED915D6D91100ADAA6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42EDA15D6D91100ADAA6A /* UIKit.framework */,
+				A1D42EDC15D6D91100ADAA6A /* Foundation.framework */,
+				A1D42EDE15D6D91100ADAA6A /* CoreGraphics.framework */,
+				A1D42EF815D6D91100ADAA6A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1D42EE015D6D91100ADAA6A /* EMClock */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42EE915D6D91100ADAA6A /* EMAppDelegate.h */,
+				A1D42EEA15D6D91100ADAA6A /* EMAppDelegate.m */,
+				A1D42EEC15D6D91100ADAA6A /* EMViewController.h */,
+				A1D42EED15D6D91100ADAA6A /* EMViewController.m */,
+				A1D42EEF15D6D91100ADAA6A /* EMViewController.xib */,
+				A1D42EE115D6D91100ADAA6A /* Supporting Files */,
+			);
+			path = EMClock;
+			sourceTree = "<group>";
+		};
+		A1D42EE115D6D91100ADAA6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42EE215D6D91100ADAA6A /* EMClock-Info.plist */,
+				A1D42EE315D6D91100ADAA6A /* InfoPlist.strings */,
+				A1D42EE615D6D91100ADAA6A /* main.m */,
+				A1D42EE815D6D91100ADAA6A /* EMClock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D42EFE15D6D91100ADAA6A /* EMClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42F0415D6D91100ADAA6A /* EMClockTests.h */,
+				A1D42F0515D6D91100ADAA6A /* EMClockTests.m */,
+				A1D42EFF15D6D91100ADAA6A /* Supporting Files */,
+			);
+			path = EMClockTests;
+			sourceTree = "<group>";
+		};
+		A1D42EFF15D6D91100ADAA6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42F0015D6D91100ADAA6A /* EMClockTests-Info.plist */,
+				A1D42F0115D6D91100ADAA6A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1D42ED515D6D91100ADAA6A /* EMClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D42F0915D6D91100ADAA6A /* Build configuration list for PBXNativeTarget "EMClock" */;
+			buildPhases = (
+				A1D42ED215D6D91100ADAA6A /* Sources */,
+				A1D42ED315D6D91100ADAA6A /* Frameworks */,
+				A1D42ED415D6D91100ADAA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMClock;
+			productName = EMClock;
+			productReference = A1D42ED615D6D91100ADAA6A /* EMClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1D42EF615D6D91100ADAA6A /* EMClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D42F0C15D6D91100ADAA6A /* Build configuration list for PBXNativeTarget "EMClockTests" */;
+			buildPhases = (
+				A1D42EF215D6D91100ADAA6A /* Sources */,
+				A1D42EF315D6D91100ADAA6A /* Frameworks */,
+				A1D42EF415D6D91100ADAA6A /* Resources */,
+				A1D42EF515D6D91100ADAA6A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1D42EFD15D6D91100ADAA6A /* PBXTargetDependency */,
+			);
+			name = EMClockTests;
+			productName = EMClockTests;
+			productReference = A1D42EF715D6D91100ADAA6A /* EMClockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1D42ECD15D6D91000ADAA6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EM;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A1D42ED015D6D91000ADAA6A /* Build configuration list for PBXProject "EMClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1D42ECB15D6D91000ADAA6A;
+			productRefGroup = A1D42ED715D6D91100ADAA6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1D42ED515D6D91100ADAA6A /* EMClock */,
+				A1D42EF615D6D91100ADAA6A /* EMClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1D42ED415D6D91100ADAA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42EE515D6D91100ADAA6A /* InfoPlist.strings in Resources */,
+				A1D42EF115D6D91100ADAA6A /* EMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D42EF415D6D91100ADAA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42F0315D6D91100ADAA6A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1D42EF515D6D91100ADAA6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1D42ED215D6D91100ADAA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42EE715D6D91100ADAA6A /* main.m in Sources */,
+				A1D42EEB15D6D91100ADAA6A /* EMAppDelegate.m in Sources */,
+				A1D42EEE15D6D91100ADAA6A /* EMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D42EF215D6D91100ADAA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D42F0615D6D91100ADAA6A /* EMClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1D42EFD15D6D91100ADAA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D42ED515D6D91100ADAA6A /* EMClock */;
+			targetProxy = A1D42EFC15D6D91100ADAA6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1D42EE315D6D91100ADAA6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1D42EE415D6D91100ADAA6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1D42EEF15D6D91100ADAA6A /* EMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1D42EF015D6D91100ADAA6A /* en */,
+			);
+			name = EMViewController.xib;
+			sourceTree = "<group>";
+		};
+		A1D42F0115D6D91100ADAA6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1D42F0215D6D91100ADAA6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1D42F0715D6D91100ADAA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1D42F0815D6D91100ADAA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1D42F0A15D6D91100ADAA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMClock/EMClock-Prefix.pch";
+				INFOPLIST_FILE = "EMClock/EMClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1D42F0B15D6D91100ADAA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMClock/EMClock-Prefix.pch";
+				INFOPLIST_FILE = "EMClock/EMClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1D42F0D15D6D91100ADAA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMClock.app/EMClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMClock/EMClock-Prefix.pch";
+				INFOPLIST_FILE = "EMClockTests/EMClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A1D42F0E15D6D91100ADAA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMClock.app/EMClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMClock/EMClock-Prefix.pch";
+				INFOPLIST_FILE = "EMClockTests/EMClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1D42ED015D6D91000ADAA6A /* Build configuration list for PBXProject "EMClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D42F0715D6D91100ADAA6A /* Debug */,
+				A1D42F0815D6D91100ADAA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D42F0915D6D91100ADAA6A /* Build configuration list for PBXNativeTarget "EMClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D42F0A15D6D91100ADAA6A /* Debug */,
+				A1D42F0B15D6D91100ADAA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1D42F0C15D6D91100ADAA6A /* Build configuration list for PBXNativeTarget "EMClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D42F0D15D6D91100ADAA6A /* Debug */,
+				A1D42F0E15D6D91100ADAA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1D42ECD15D6D91000ADAA6A /* Project object */;
+}
