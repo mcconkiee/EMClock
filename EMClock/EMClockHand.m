@@ -63,6 +63,12 @@
             }
                 break;
                 
+            case EMClockHandTypeSecond:
+            {
+                CGContextAddLineToPoint(ctx, c.x + radius-5, c.y); 
+            }
+                break;
+                
             default:
                 break;
         }
@@ -73,5 +79,9 @@
     
 }
 
-
+- (void)dealloc
+{
+    _clock = nil;
+    [super dealloc];
+}
 @end

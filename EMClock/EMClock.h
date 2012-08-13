@@ -21,6 +21,7 @@
 
 @property (nonatomic,retain)EMClockHand *hourHand;
 @property (nonatomic,retain)EMClockHand *minuteHand;
+@property (nonatomic,retain)EMClockHand *secondHand;
 @property (nonatomic,retain)EMClockFace *face;
 @property (nonatomic,assign)id<EMClockDelegate>delegate;
 

@@ -14,6 +14,7 @@ A few things:
 
 `-(void)setHours:(int)hours animated:(BOOL)flag;`
 
+Check out the sample to see some examples of how to implement.
 
 TODO
 =========

@@ -40,6 +40,7 @@
 {
     [self resetSlider];
     [self onTick:nil];
+    timer =[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidLoad
@@ -54,7 +55,7 @@
     [aClock release];
     
     clock = [aClock retain];
-    
+
     //set up slider
     [sliderTime setMinimumValue:0];
     [sliderTime setMaximumValue:86400];    
