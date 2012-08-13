@@ -10,21 +10,26 @@
 #import "EMClockFace.h"
 #import "EMClockHand.h"
 
+
+
 @protocol EMClockDelegate <NSObject>
 
 @optional
 -(UIColor *)emclock:(id)clock colorForFaceLabel:(UILabel*)label atIndex:(NSInteger)index;
+-(UIView *)emclock:(id)clock  clockHandforType:(EMClockHandType)handType;
 -(UIColor *)emclock:(id)clock colorForHand:(EMClockHand *)label ; 
 @end
 
 @interface EMClock : UIView
 
-@property (nonatomic,retain)EMClockHand *hourHand;
-@property (nonatomic,retain)EMClockHand *minuteHand;
-@property (nonatomic,retain)EMClockHand *secondHand;
+@property (nonatomic,retain)UIView *hourHand;
+@property (nonatomic,retain)UIView *minuteHand;
+@property (nonatomic,retain)UIView *secondHand;
 @property (nonatomic,retain)EMClockFace *face;
 @property (nonatomic,assign)id<EMClockDelegate>delegate;
-
+@property (nonatomic,assign) int hours;
+@property (nonatomic,assign) int minutes;
+@property (nonatomic,assign) int seconds;
 - (id)initWithFrame:(CGRect)frame delegate:(id<EMClockDelegate>)aDelegate;
 -(void)setTime:(NSDate*)time animated:(BOOL)flag;
 -(void)setMinutes:(int)mins animated:(BOOL)flag;

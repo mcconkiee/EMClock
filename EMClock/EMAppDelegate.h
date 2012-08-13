@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class EMViewController;
+
 
 @interface EMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) EMViewController *viewController;
+
 
 @end

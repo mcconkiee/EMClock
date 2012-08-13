@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EMDateTimeHelper.h"
 #import "EMClock.h"
-@interface EMViewController : UIViewController<EMClockDelegate>
+@interface ClockAndSliderViewController : UIViewController<EMClockDelegate>
 {
     //time to tick and keep time
     //if not using second hands, consider a minute timer

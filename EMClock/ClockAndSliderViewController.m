@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "EMViewController.h"
+#import "ClockAndSliderViewController.h"
 
-@interface EMViewController ()
+@interface ClockAndSliderViewController ()
 
 @end
 
-@implementation EMViewController
+@implementation ClockAndSliderViewController
 @synthesize sliderTime;
 
 #pragma mark ---------------------------------->> 
@@ -53,6 +53,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     _helper = [[EMDateTimeHelper alloc] init];
     
 	// Do any additional setup after loading the view, typically from a nib.
@@ -113,7 +115,7 @@
 
 -(UIColor*)emclock:(EMClock*)aclock colorForHand:(EMClockHand *)hand
 {
-    if (hand == aclock.minuteHand) {
+    if (hand == aclock.secondHand) {
         return [UIColor whiteColor ];        
     }
     return nil;

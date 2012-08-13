@@ -34,7 +34,7 @@
        
     }
     
-    CGFloat handEnd = 5.0;
+//    CGFloat handEnd = 5.0;
     CGFloat radius = self.bounds.size.width/2;
     CGPoint c = self.center;
     CGContextRef ctx = UIGraphicsGetCurrentContext();
@@ -48,16 +48,16 @@
         CGContextMoveToPoint(ctx, c.x,c.y);
         switch (_handType) {
             case EMClockHandTypeHour:
-                CGContextAddArc(ctx, c.x +(radius/2-handEnd/2), c.y, handEnd, 0, M_PI *2, 1);
-                CGContextFillPath(ctx);
-                CGContextMoveToPoint(ctx, c.x, c.y);
+//                CGContextAddArc(ctx, c.x +(radius/2-handEnd/2), c.y, handEnd, 0, M_PI *2, 1);
+//                CGContextFillPath(ctx);
+//                CGContextMoveToPoint(ctx, c.x, c.y);
                 CGContextAddLineToPoint(ctx, c.x + radius/2, c.y);
                 break;
             case EMClockHandTypeMinute:
             {   
-                CGContextAddArc(ctx, c.x +(radius-handEnd/2)-5, c.y, handEnd, 0, M_PI *2, 1);
-                CGContextFillPath(ctx);
-                CGContextMoveToPoint(ctx, c.x, c.y);
+//                CGContextAddArc(ctx, c.x +(radius-handEnd/2)-5, c.y, handEnd, 0, M_PI *2, 1);
+//                CGContextFillPath(ctx);
+//                CGContextMoveToPoint(ctx, c.x, c.y);
                 CGContextAddLineToPoint(ctx, c.x + radius-5, c.y);                
                 
             }
