@@ -60,7 +60,7 @@
 		A1D42F1015D6D93700ADAA6A /* EMClockHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMClockHand.m; sourceTree = "<group>"; };
 		A1D42F1215D6D94400ADAA6A /* EMClockFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClockFace.h; sourceTree = "<group>"; };
 		A1D42F1315D6D94400ADAA6A /* EMClockFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMClockFace.m; sourceTree = "<group>"; };
-		A1D42F1515D6D95500ADAA6A /* EMDateTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; path = EMDateTimeHelper.h; sourceTree = "<group>"; };
+		A1D42F1515D6D95500ADAA6A /* EMDateTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDateTimeHelper.h; sourceTree = "<group>"; };
 		A1D42F1615D6D95500ADAA6A /* EMDateTimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDateTimeHelper.m; sourceTree = "<group>"; };
 		A1D42F1815D6D96100ADAA6A /* EMClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClock.h; sourceTree = "<group>"; };
 		A1D42F1915D6D96100ADAA6A /* EMClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMClock.m; sourceTree = "<group>"; };
@@ -123,20 +123,14 @@
 		A1D42EE015D6D91100ADAA6A /* EMClock */ = {
 			isa = PBXGroup;
 			children = (
+				A1D42F1D15D8A2A800ADAA6A /* util */,
+				A1D42F1B15D8A29400ADAA6A /* view */,
 				A1D42EE915D6D91100ADAA6A /* EMAppDelegate.h */,
 				A1D42EEA15D6D91100ADAA6A /* EMAppDelegate.m */,
 				A1D42EEC15D6D91100ADAA6A /* EMViewController.h */,
 				A1D42EED15D6D91100ADAA6A /* EMViewController.m */,
 				A1D42EEF15D6D91100ADAA6A /* EMViewController.xib */,
 				A1D42EE115D6D91100ADAA6A /* Supporting Files */,
-				A1D42F0F15D6D93700ADAA6A /* EMClockHand.h */,
-				A1D42F1015D6D93700ADAA6A /* EMClockHand.m */,
-				A1D42F1215D6D94400ADAA6A /* EMClockFace.h */,
-				A1D42F1315D6D94400ADAA6A /* EMClockFace.m */,
-				A1D42F1515D6D95500ADAA6A /* EMDateTimeHelper.h */,
-				A1D42F1615D6D95500ADAA6A /* EMDateTimeHelper.m */,
-				A1D42F1815D6D96100ADAA6A /* EMClock.h */,
-				A1D42F1915D6D96100ADAA6A /* EMClock.m */,
 			);
 			path = EMClock;
 			sourceTree = "<group>";
@@ -169,6 +163,36 @@
 				A1D42F0115D6D91100ADAA6A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D42F1B15D8A29400ADAA6A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42F1C15D8A29600ADAA6A /* clock */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A1D42F1C15D8A29600ADAA6A /* clock */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42F1815D6D96100ADAA6A /* EMClock.h */,
+				A1D42F1915D6D96100ADAA6A /* EMClock.m */,
+				A1D42F0F15D6D93700ADAA6A /* EMClockHand.h */,
+				A1D42F1015D6D93700ADAA6A /* EMClockHand.m */,
+				A1D42F1215D6D94400ADAA6A /* EMClockFace.h */,
+				A1D42F1315D6D94400ADAA6A /* EMClockFace.m */,
+			);
+			name = clock;
+			sourceTree = "<group>";
+		};
+		A1D42F1D15D8A2A800ADAA6A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				A1D42F1515D6D95500ADAA6A /* EMDateTimeHelper.h */,
+				A1D42F1615D6D95500ADAA6A /* EMDateTimeHelper.m */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
