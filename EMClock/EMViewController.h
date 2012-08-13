@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EMDateTimeHelper.h"
+#import "EMClock.h"
+@interface EMViewController : UIViewController<EMClockDelegate>
+{
+    NSTimer *timer;
+    id clock;
 
-@interface EMViewController : UIViewController
-
+    EMDateTimeHelper *_helper;
+    
+}
+@property (retain, nonatomic) IBOutlet UISlider *sliderTime;
 @end
