@@ -14,12 +14,9 @@
 
 @implementation EMViewController
 @synthesize sliderTime;
--(void)resetSlider
-{
-    NSTimeInterval nowInt = [_helper secondsPassedSinceMidnight];    
-    [sliderTime setValue:nowInt animated:YES];
-}
 
+#pragma mark ---------------------------------->> 
+#pragma mark -------------->>handlers
 -(void)onTick:(NSTimer*)timer
 {
     [(EMClock*)clock setTime:[NSDate date] animated:YES];
@@ -43,6 +40,16 @@
     timer =[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
 }
 
+#pragma mark ---------------------------------->> 
+#pragma mark -------------->>privates
+-(void)resetSlider
+{
+    NSTimeInterval nowInt = [_helper secondsPassedSinceMidnight];    
+    [sliderTime setValue:nowInt animated:YES];
+}
+
+#pragma mark ---------------------------------->> 
+#pragma mark -------------->>lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -82,7 +89,7 @@
 
 - (void)dealloc {
     [sliderTime release];
-    clock = nil;
+    [clock release];
     [_helper release];
     
     [super dealloc];
@@ -104,9 +111,9 @@
     return [UIColor whiteColor];
 }
 
--(UIColor*)emclock:(EMClock*)clock colorForHand:(EMClockHand *)hand
+-(UIColor*)emclock:(EMClock*)aclock colorForHand:(EMClockHand *)hand
 {
-    if (hand == clock.minuteHand) {
+    if (hand == aclock.minuteHand) {
         return [UIColor whiteColor ];        
     }
     return nil;

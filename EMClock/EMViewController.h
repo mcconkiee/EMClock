@@ -11,11 +11,19 @@
 #import "EMClock.h"
 @interface EMViewController : UIViewController<EMClockDelegate>
 {
+    //time to tick and keep time
+    //if not using second hands, consider a minute timer
     NSTimer *timer;
+    
+    //hold ref to this clock
     id clock;
 
+    //a helper to work the date calculations of this demo
     EMDateTimeHelper *_helper;
     
 }
+
+//slider simply allows user to slide from midnight to midnight to watch the hands go round...
 @property (retain, nonatomic) IBOutlet UISlider *sliderTime;
+
 @end
