@@ -49,7 +49,7 @@
         [clck setCenter:self.view.center];
         [clck release];
     }
-    _aTimer = [NSTimer scheduledTimerWithTimeInterval:10.0
+    _aTimer = [NSTimer scheduledTimerWithTimeInterval:60 //every minute, fire
                                                target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
 }
 
